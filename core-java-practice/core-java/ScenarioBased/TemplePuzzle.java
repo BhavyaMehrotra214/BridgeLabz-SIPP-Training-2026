@@ -75,7 +75,6 @@ public class TemplePuzzle {
         int key = sc.nextInt();
 
         int result = binarySearch(prices, 0, prices.length - 1, key);
-
         if (result != -1) {
             System.out.println("Found at index " + result);
         } else {
