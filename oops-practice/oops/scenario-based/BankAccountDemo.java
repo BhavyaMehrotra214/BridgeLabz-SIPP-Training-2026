@@ -1,9 +1,7 @@
 import java.util.ArrayList;
 
 public class BankAccountDemo {
-
     static class BankAccount {
-
         private int accountNumber;
         private String holder;
         private double balance;
@@ -45,7 +43,6 @@ public class BankAccountDemo {
                 System.out.println(s);
             }
         }
-
         public static int getTotalAccounts() {
             return totalAccounts;
         }
