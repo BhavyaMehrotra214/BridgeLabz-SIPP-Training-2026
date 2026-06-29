@@ -1,4 +1,4 @@
-public class Truck extends Vehicle {
+public class Truck extends Vehiclee {
 
     private double dailyRate;
     private double loadingCharge;

@@ -1,4 +1,4 @@
-public class Car extends Vehicle {
+public class Car extends Vehiclee {
 
     private double dailyRate;
 
