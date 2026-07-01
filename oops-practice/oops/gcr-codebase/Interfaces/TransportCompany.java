@@ -1,7 +1,5 @@
 class Vehicle {
-
     String vehicleNumber;
-
     Vehicle(String vehicleNumber) {
         this.vehicleNumber = vehicleNumber;
     }
@@ -11,9 +9,9 @@ class Vehicle {
     }
 }
 
-class Car extends Vehicle {
+class Caar extends Vehicle {
 
-    Car(String vehicleNumber) {
+    Caar(String vehicleNumber) {
         super(vehicleNumber);
     }
 
@@ -35,9 +33,9 @@ class Bus extends Vehicle {
     }
 }
 
-class Bike extends Vehicle {
+class Bikke extends Vehicle {
 
-    Bike(String vehicleNumber) {
+    Bikke(String vehicleNumber) {
         super(vehicleNumber);
     }
 
@@ -48,9 +46,9 @@ class Bike extends Vehicle {
 }
 
 // New class added without changing old classes
-class ElectricCar extends Vehicle {
+class ElectricCaar extends Vehicle {
 
-    ElectricCar(String vehicleNumber) {
+    ElectricCaar(String vehicleNumber) {
         super(vehicleNumber);
     }
 
@@ -65,10 +63,10 @@ public class TransportCompany {
     public static void main(String[] args) {
 
         Vehicle[] fleet = {
-                new Car("CAR101"),
+                new Caar("CAR101"),
                 new Bus("BUS201"),
-                new Bike("BIKE301"),
-                new ElectricCar("EV401")
+                new Bikke("BIKE301"),
+                new ElectricCaar("EV401")
         };
 
         int km = 50;
@@ -78,17 +76,17 @@ public class TransportCompany {
             System.out.println("Cost for " + v.vehicleNumber +
                     " = ₹" + v.fuelCost(km));
 
-            if (v instanceof Car) {
-                Car c = (Car) v;
+            if (v instanceof Caar) {
+                Caar c = (Caar) v;
                 System.out.println("This is a Car");
             } else if (v instanceof Bus) {
                 Bus b = (Bus) v;
                 System.out.println("This is a Bus");
-            } else if (v instanceof Bike) {
-                Bike b = (Bike) v;
+            } else if (v instanceof Bikke) {
+                Bikke b = (Bikke) v;
                 System.out.println("This is a Bike");
-            } else if (v instanceof ElectricCar) {
-                ElectricCar e = (ElectricCar) v;
+            } else if (v instanceof ElectricCaar) {
+                ElectricCaar e = (ElectricCaar) v;
                 System.out.println("This is an Electric Car");
             }
 
